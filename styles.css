@@ -1,0 +1,229 @@
+body {
+    background-color: #e9e7e7;
+  }
+  * {
+    box-sizing: border-box;
+    margin-right: 0;
+    padding-right: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  /*      PORTION 1        */
+  
+  .a.sectiona {
+    width: initial;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .a.sectiona.l ul {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+  }
+  .a.sectiona.l ul li {
+    float: right;
+    font-size: 15px;
+  }
+  .a.sectiona.l ul a:hover {
+    color: rgb(165, 132, 132);
+  }
+  .a.sectiona.l ul a {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    color: #000703;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+  }
+  .a.sectiona.r {
+    flex-grow: 3;
+    flex-basis: 10%;
+    padding-right: 20px;
+    justify-content: flex-end;
+    padding-right: 110px;
+  }
+  .a.sectiona.r button:hover{
+    background-color: grey;
+  }
+  .a.sectiona.r button {
+    width: 180px;
+    height: 48px;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5px;
+    border: 3px solid black;
+    background-color: #e9e7e7;
+    color: #fc0101;
+  }
+  .a.sectionb {
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .a.sectionb.l {
+    flex-direction: column;
+    text-align: left;
+    margin-left: 95px;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .a.sectionb.l h1 {
+    font-size: 52px;
+    text-align: left;
+    width: 340px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .a.sectionb.l p {
+    font-size: medium;
+    text-align: left;
+    width: 340px;
+    margin-bottom: 20px;
+  }
+  .a.sectionb.l button:hover{
+    background-color: grey;
+  }
+  .a.sectionb.l button {
+    border-radius: 10px;
+    background-color: #6b0202;
+    color: #e9e7e7;
+    width: 215px;
+    height: 47px;
+    font-size: 15px;
+    padding: 15px 40px;
+  }
+  .a.sectionb.r {
+    flex: 1;
+    margin-right: 110px;
+  }
+  .a.sectionb.r img {
+    width: 80%;
+    height: auto;
+    min-width: 370px;
+  }
+  .a.sectionc {
+    width: 100%;
+    background-color: rgb(213, 237, 247);
+    color: #020000;
+    padding: 20px;
+  }
+  .a.sectionc h4{
+    text-align: right;
+  }
+  .column {
+    float: left;
+    width: 45%;
+    padding: 20px;
+    height: 300px; 
+    border:20px solid rgb(213, 237, 247);
+    
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  /*      PORTION 2        */
+  .b.sectiona {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 140px;
+
+  }
+  .b.sectiona.child {
+    text-align: center; 
+    display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: auto;
+  }
+  .b.sectiona img {
+    width: 250px;
+    margin: 30px 30px 30px 0;
+    float: left;
+  }
+  .b.sectiona h1 {
+    display:inline;
+    font-size: 20px;
+    padding: 55px 20px 30px;
+    width: 175px;
+  }
+  .b.sectiona p {
+
+    font-size: 15px;
+    width: 295px;
+    padding: 5px 20px;
+    text-align: center;
+  }
+  
+
+
+  .h {
+    padding-top: 20px;
+    background-color: #c4c4c4;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+  .h.foothead {
+    font-size: 35px;
+    width: 20%;
+    flex: 1;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .h.foothead h1{
+    font-size: 35px;
+    width: 50%;
+  }
+  .h.elements {
+    flex: 3;
+    font-size: 15px;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .h.elements td, th {
+    padding: 12.5px 35px;
+    font-size: 16px;
+  }
+  .h.elements a{
+      color: #232323;
+  }
+  .h.elements a:hover{
+      color: grey;
+      text-decoration: none;
+  }
+  .h.elements a:link{
+      text-decoration: none;
+  }
+  .h footer {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
